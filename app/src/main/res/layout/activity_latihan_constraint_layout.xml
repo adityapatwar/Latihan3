@@ -17,12 +17,12 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
     >
-    <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@mipmap/ic_launcher"
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher"
 
-    />
+        />
         <View android:layout_width="10dp"
               android:layout_height="match_parent"
               android:background="@android:color/holo_orange_light"/>
@@ -32,7 +32,7 @@
               android:background="@android:color/holo_orange_light"/>
 
     </FrameLayout>
-    
+
     <Button
             android:id="@+id/tombol_login"
             android:layout_width="347dp"
@@ -61,7 +61,7 @@
             app:layout_constraintTop_toBottomOf="@id/imageView2"
     >
         <ImageView android:layout_width="30dp" android:layout_height="30dp"
-            android:layout_gravity="center"
+                   android:layout_gravity="center"
                    android:layout_margin="10dp"
                    android:background="#ffffff"
                    android:src="@drawable/ic_person_black_24dp"
@@ -103,7 +103,7 @@
                 android:background="#ffffff"
                 android:ems="10"
                 android:hint="password"
-                android:inputType="textPersonName"
+                android:inputType="textPassword"
                 app:layout_constraintHorizontal_bias="0.523"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -113,12 +113,29 @@
     </LinearLayout>
 
     <Button
+            android:id="@+id/tombol_guest"
+            android:layout_width="347dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            android:background="#2196f3"
+            android:text="GUEST"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tombol_login"
+
+
+    />
+
+    <Button
             android:id="@+id/tombol_lupa_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:background="#000000"
+            android:background="#00000000"
             android:text="Forgot your password"
             android:textAllCaps="false"
             android:textColor="#ffffff"
